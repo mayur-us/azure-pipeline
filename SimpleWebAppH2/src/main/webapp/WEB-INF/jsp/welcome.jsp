@@ -1,7 +1,7 @@
 <%@ include file="common/header.jspf"%>
 <%@ include file="common/navigation.jspf"%>
 <div class="container">
-	Welcome ${name}!! <a href="./list-tasks">Click here</a> to manage your
+	Welcome to PIPELINES ${name}!! <a href="./list-tasks">Click here</a> to manage your
 	tasks
 	<br>
 	${instanceId}
