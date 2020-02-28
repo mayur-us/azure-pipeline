@@ -31,7 +31,7 @@ public class WelcomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String showWelcomePage(ModelMap model) {
 //		model.put("name", getLoggedinUserName());
-		model.put("name", "Mayur");
+		model.put("name", "Mayur Doshi");
 		model.put("instanceId", environment.getProperty("WEBSITE_INSTANCE_ID"));
 		return "welcome";
 	}
