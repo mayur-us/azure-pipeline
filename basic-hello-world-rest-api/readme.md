@@ -2,7 +2,7 @@
 
 ### Running the Application
 
-Run com.in28minutes.rest.webservices.restfulwebservices.RestfulWebServicesApplication as a Java Application.
+Run com.lending.rest.webservices.restfulwebservices.RestfulWebServicesApplication as a Java Application.
 
 - http://localhost:8080/hello-world
 
@@ -19,7 +19,7 @@ Hello World
 - http://localhost:8080/hello-world/path-variable/in28minutes
 
 ```json
-{"message":"Hello World, in28minutes"}
+{"message":"Hello World, lending"}
 ```
 
 ### Plugin configuration
