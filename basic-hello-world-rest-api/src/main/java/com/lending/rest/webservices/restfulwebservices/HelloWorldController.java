@@ -9,14 +9,14 @@ public class HelloWorldController {
 
 	@GetMapping(path = "/hello-world")
 	public String helloWorld() {
-		return "Hello World ";
+		return "Hello World . I am deploying a new version";
 	}
 
 	@GetMapping(path = "/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
 		// throw new RuntimeException("Some Error has Happened! Contact Support at
 		// ***-***");
-		return new HelloWorldBean("Azure V2");
+		return new HelloWorldBean("Azure V2. I am deploying a new version");
 	}
 
 	/// hello-world/path-variable/in28minutes
