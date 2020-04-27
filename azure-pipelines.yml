@@ -9,13 +9,13 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '75ed0966-96b0-4ebb-aff4-9b0a5445b57c'
+  azureSubscription: '533e370d-556d-44ed-b7b1-a9b3bcb2a899'
   
   # Web app name
-  webAppName: 'SimpleWebAppH2'
+  webAppName: 'basic-hello-world-rest-api'
 
   # Environment name
-  environmentName: 'SimpleWebAppH2'
+  environmentName: 'basic-hello-world-rest-api'
   
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -33,7 +33,7 @@ stages:
     - task: Maven@3
       displayName: 'Maven Package'
       inputs:
-        mavenPomFile: 'SimpleWebAppH2/pom.xml'
+        mavenPomFile: 'basic-hello-world-rest-api/pom.xml'
 
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
@@ -60,7 +60,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: SimpleWebAppH2'
+            displayName: 'Azure Web App Deploy: basic-hello-world-rest-api'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
